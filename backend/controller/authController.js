@@ -10,6 +10,7 @@ const RegisterUser = asyncHandler(async (req, res) => {
   const userExist = await User.findOne({ email });
   if (userExist) {
     res.status(400);
+    res.send({ ErrorMessage: 'user already exist' });
     throw new Error('User is already exist');
   }
 
@@ -51,7 +52,8 @@ const authUser = asyncHandler(async (req, res) => {
     });
   } else {
     res.status(400);
-    throw new Error('user Not found please register first');
+    res.send({ ErrorMessage: 'userNot found please regiester first' });
+    throw new Error('userNot found please regiester first');
   }
 });
 
