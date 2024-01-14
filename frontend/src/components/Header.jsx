@@ -21,12 +21,9 @@ const Header = () => {
     <header className='bg-gradient-to-r fixed w-full from-blue-900 to-blue-950 p-4 z-10'>
       <div className='container mx-auto justify-start gap-96 flex items-center'>
         <div className='flex items-center'>
-          <img
-            src='/path/to/your/logo.png'
-            alt='Logo'
-            className='h-10 w-auto mr-4'
-          />
-          <span className='text-white text-lg font-semibold'>Your Logo</span>
+          <span className='text-white text-lg font-semibold'>
+            Emploee Manager
+          </span>
         </div>
         <nav className='hidden md:flex items-center space-x-6'>
           <Link
