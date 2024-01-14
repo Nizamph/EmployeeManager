@@ -1,0 +1,13 @@
+{
+  "name": "employeemanager",
+  "version": "1.0.0",
+  "description": "parent folder for employeeApp",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "",
+  "license": "ISC"
+}
