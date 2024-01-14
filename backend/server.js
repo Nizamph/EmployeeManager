@@ -1,6 +1,7 @@
 const express = require('express');
 const connectDB = require('./config/db');
 const userRoutes = require('./routes/authRoutes');
+const employeeRoutes = require('./routes/employeeRoutes');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const app = express();
@@ -14,6 +15,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/auth', userRoutes);
+app.use('/api/employee', employeeRoutes);
 
 const PORT = process.env.PORT || 4000;
 
